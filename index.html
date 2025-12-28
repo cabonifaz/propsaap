@@ -39,7 +39,7 @@
                             500: '#f97316',
                         },
                         footer: {
-                            bg: '#0B1120', /* Color exacto oscuro de la imagen */
+                            bg: '#0B1120',
                             text: '#94A3B8',
                         }
                     },
@@ -75,86 +75,125 @@
         <span>Lanzamiento: <span class="text-accent-400 font-bold">2 MESES GRATIS</span> en planes anuales.</span>
     </div>
 
-   <header class="fixed w-full top-9 z-50 glass-effect border-b border-slate-200 shadow-sm transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
-            
-            <div class="flex-shrink-0 flex items-center gap-2">
-                <div class="w-10 h-10 bg-gradient-to-br from-brand-600 to-accent-500 rounded-lg flex items-center justify-center text-white shadow-lg transform rotate-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
+    <header class="fixed w-full top-9 z-50 glass-effect border-b border-slate-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-brand-600 to-accent-500 rounded-lg flex items-center justify-center text-white shadow-lg transform rotate-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <span class="font-extrabold text-2xl text-slate-900 tracking-tight">PropSaap</span>
                 </div>
-                <span class="font-extrabold text-2xl text-slate-900 tracking-tight">PropSaap</span>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#perfiles" class="text-slate-600 hover:text-brand-600 font-medium transition">Para Quién</a>
+                    <a href="#beneficios" class="text-slate-600 hover:text-brand-600 font-medium transition">Comercialización</a>
+                    <a href="#seguridad" class="text-slate-600 hover:text-brand-600 font-medium transition flex items-center gap-1">
+                        <svg class="w-4 h-4 text-security-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                        Seguridad
+                    </a>
+                    <a href="#planes" class="text-slate-600 hover:text-brand-600 font-medium transition flex items-center gap-1 group">
+                        <svg class="w-4 h-4 text-promo-500 group-hover:-rotate-12 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                        </svg>
+                        Planes
+                    </a>
+                </nav>
+
+                <div class="hidden md:flex items-center">
+                    <a href="#" class="btn-whatsapp bg-brand-900 hover:bg-brand-700 text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg ring-2 ring-transparent hover:ring-brand-500 flex items-center gap-2">
+                        Solicitar Demo
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-600 focus:outline-none p-2">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            
-            <nav class="hidden md:flex space-x-8">
-                <a href="#perfiles" class="text-slate-600 hover:text-brand-600 font-medium transition">Para Quién</a>
-                <a href="#beneficios" class="text-slate-600 hover:text-brand-600 font-medium transition">Comercialización</a>
-                <a href="#seguridad" class="text-slate-600 hover:text-brand-600 font-medium transition flex items-center gap-1">
-                    <svg class="w-4 h-4 text-security-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 top-20">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#perfiles" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50">Para Quién</a>
+                <a href="#beneficios" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50">Comercialización</a>
+                <a href="#seguridad" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-security-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
                     Seguridad
                 </a>
-                <a href="#planes" class="text-slate-600 hover:text-brand-600 font-medium transition flex items-center gap-1 group">
-                    <svg class="w-4 h-4 text-promo-500 group-hover:-rotate-12 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-                    </svg>
+                <a href="#planes" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-promo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>
                     Planes
                 </a>
-            </nav>
-
-            <div class="hidden md:flex items-center">
-                <a href="#contacto" class="bg-brand-900 hover:bg-brand-700 text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg ring-2 ring-transparent hover:ring-brand-500 flex items-center gap-2">
-                    Solicitar Demo
-                </a>
-            </div>
-
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-slate-600 hover:text-brand-600 focus:outline-none p-2">
-                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
+                <div class="pt-4 mt-2 border-t border-slate-100">
+                    <a href="#" class="btn-whatsapp block w-full text-center bg-brand-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-800">
+                        Solicitar Demo
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 top-20">
-        <div class="px-4 pt-2 pb-6 space-y-2">
-            <a href="#perfiles" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50">Para Quién</a>
-            <a href="#beneficios" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50">Comercialización</a>
-            <a href="#seguridad" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 flex items-center gap-2">
-                <svg class="w-5 h-5 text-security-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
-                Seguridad
-            </a>
-            <a href="#planes" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-brand-600 hover:bg-brand-50 flex items-center gap-2">
-                <svg class="w-5 h-5 text-promo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>
-                Planes
-            </a>
-            <div class="pt-4 mt-2 border-t border-slate-100">
-                <a href="#contacto" class="block w-full text-center bg-brand-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-brand-800">
-                    Solicitar Demo
-                </a>
-            </div>
-        </div>
-    </div>
-</header>
+    <script>
+        // 1. Control del Menú Móvil
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
 
-<script>
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-
-    btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-    });
-    
-    // Opcional: Cerrar menú al hacer clic en un enlace
-    menu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            menu.classList.add('hidden');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
         });
-    });
-</script>
+        
+        // Cerrar al hacer clic en enlace
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // 2. Lógica de WhatsApp Dinámico
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // --- CONFIGURACIÓN DE NÚMEROS ---
+            const directorio = {
+                'default': '51919292352',  // Número central (Reemplázalo con el tuyo)
+                'asesor1': '51999999999',  // Ejemplo: ?asesor=asesor1
+                'asesor2': '51888888888'   // Ejemplo: ?asesor=asesor2
+            };
+            const parametro = 'asesor'; // Nombre del parámetro en la URL
+            // -------------------------------
+
+            // Obtener parámetro de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const clave = urlParams.get(parametro);
+            
+            // Definir número final
+            const nuevoNumero = directorio[clave] || directorio['default'];
+
+            // Mensaje por defecto
+            const mensaje = encodeURIComponent("Hola, me interesa conocer más sobre los planes de PropSaap.");
+
+            // Seleccionar todos los botones con la clase 'btn-whatsapp'
+            const enlacesWsp = document.querySelectorAll('.btn-whatsapp');
+
+            enlacesWsp.forEach(link => {
+                // Asignar enlace directo a WhatsApp
+                link.href = `https://wa.me/${nuevoNumero}?text=${mensaje}`;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+            });
+
+            // Log para verificar en consola
+            if(clave && directorio[clave]) {
+                console.log(`PropSaap: Modo asesor activo (${clave}) -> ${nuevoNumero}`);
+            }
+        });
+    </script>
 
     <section class="pt-44 pb-20 lg:pt-52 lg:pb-32 overflow-hidden relative bg-gradient-to-b from-slate-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -177,7 +216,7 @@
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#planes" class="bg-brand-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-700 transition shadow-lg shadow-brand-600/20 flex items-center justify-center gap-2">
+                        <a href="#" class="btn-whatsapp bg-brand-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-700 transition shadow-lg shadow-brand-600/20 flex items-center justify-center gap-2">
                            Ver Oferta Lanzamiento
                         </a>
                         <a href="#perfiles" class="flex items-center justify-center gap-2 bg-white text-slate-700 border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:border-brand-500 hover:text-brand-600 transition">
@@ -287,9 +326,9 @@
                         <p class="text-slate-600 mb-6 font-medium">Maximiza el flujo de caja y automatiza la recaudación.</p>
                         <ul class="space-y-3">
                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span class="text-sm text-slate-600">Gestión de listas de precios y stock.</span></li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span class="text-sm text-slate-600">Facturación SUNAT automática (Boletas/Facturas).</span></li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span class="text-sm text-slate-600">Control de pagos, morosidad y letras.</span></li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span class="text-sm text-slate-600">Conciliación bancaria de ingresos.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span class="text-sm text-slate-600">Facturación SUNAT automática.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span class="text-sm text-slate-600">Control de pagos y morosidad.</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span class="text-sm text-slate-600">Conciliación bancaria.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -432,7 +471,7 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <a href="#contacto" class="block w-full py-3 px-4 bg-slate-50 text-slate-700 font-bold text-center rounded-xl hover:bg-slate-100 transition border border-slate-200">Empezar</a>
+                    <a href="#" class="btn-whatsapp block w-full py-3 px-4 bg-slate-50 text-slate-700 font-bold text-center rounded-xl hover:bg-slate-100 transition border border-slate-200">Empezar</a>
                 </div>
             </div>
 
@@ -452,7 +491,7 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <a href="#contacto" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold text-center rounded-xl hover:bg-slate-200 transition border border-slate-200">Solicitar Inicio</a>
+                    <a href="#" class="btn-whatsapp block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold text-center rounded-xl hover:bg-slate-200 transition border border-slate-200">Solicitar Inicio</a>
                 </div>
             </div>
 
@@ -473,7 +512,7 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <a href="#contacto" class="block w-full py-3 px-4 bg-gradient-to-r from-brand-600 to-accent-500 text-white font-bold text-center rounded-xl hover:from-brand-700 hover:to-accent-600 transition shadow-lg shadow-brand-500/50">Lo Quiero</a>
+                    <a href="#" class="btn-whatsapp block w-full py-3 px-4 bg-gradient-to-r from-brand-600 to-accent-500 text-white font-bold text-center rounded-xl hover:from-brand-700 hover:to-accent-600 transition shadow-lg shadow-brand-500/50">Lo Quiero</a>
                 </div>
             </div>
 
@@ -492,87 +531,84 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <a href="#contacto" class="block w-full py-3 px-4 bg-slate-800 text-white font-bold text-center rounded-xl hover:bg-slate-900 transition shadow-lg">Contactar</a>
+                    <a href="#" class="btn-whatsapp block w-full py-3 px-4 bg-slate-800 text-white font-bold text-center rounded-xl hover:bg-slate-900 transition shadow-lg">Contactar</a>
                 </div>
             </div>
 
         </div>
     </div>
-</section>
+    </section>
 
     <footer class="bg-footer-bg text-footer-text py-12 lg:py-16 border-t border-slate-800 relative z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12 lg:mb-16">
-            
-            <div class="space-y-6">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-gradient-to-br from-brand-600 to-accent-500 rounded-md flex items-center justify-center text-white shadow-lg transform rotate-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                        </svg>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12 lg:mb-16">
+                
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-brand-600 to-accent-500 rounded-md flex items-center justify-center text-white shadow-lg transform rotate-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <span class="text-white text-2xl font-bold tracking-tight">PropSaap</span>
                     </div>
-                    <span class="text-white text-2xl font-bold tracking-tight">PropSaap</span>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                        La solución integral para proyectos inmobiliarios. 
+                        Desarrollado por <strong class="text-white"><a target="_blank" href=https://geeky-tech.es/>Geeky Tech</a></strong>, somos fabricantes de software comprometidos con tu crecimiento.
+                    </p>
+                    <div class="flex items-center text-green-500 font-bold text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
+                        Data Encriptada & Segura
+                    </div>
                 </div>
-                
-                <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-                    La solución integral para proyectos inmobiliarios. 
-                    Desarrollado por <strong><a class="text-white" target="_blank" href=https://geeky-tech.es/>Geeky Tech</a></strong>, somos fabricantes de software comprometidos con tu crecimiento.
-                </p>
-                
-                <div class="flex items-center text-green-500 font-bold text-sm">
-                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
-                    Data Encriptada & Segura
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-slate-700 pb-2 inline-block">Garantía de Datos</h4>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            <p class="text-sm"><strong class="text-white">Contrato NDA:</strong> Firmamos acuerdos de confidencialidad para proteger tu información sensible.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                            <p class="text-sm"><strong class="text-white">Privacidad Total:</strong> Tu base de datos es tuya. Garantizamos acceso exclusivo.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+                            <p class="text-sm"><strong class="text-white">Backups Diarios:</strong> Copias automáticas para que nunca pierdas información.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-slate-700 pb-2 inline-block">Servicio Premium</h4>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            <p class="text-sm"><strong class="text-white">Protocolos SLA:</strong> Soporte directo garantizado con ingenieros.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-400 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+                            <p class="text-sm"><strong class="text-white">Personalización:</strong> Adaptamos el software a tus flujos.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-purple-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                            <p class="text-sm"><strong class="text-white">Mejora Continua:</strong> Actualizaciones gratis siempre.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div>
-                <h4 class="text-white font-bold text-lg mb-6 border-b border-slate-700 pb-2 inline-block">Garantía de Datos</h4>
-                <ul class="space-y-5">
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-brand-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                        <p class="text-sm"><strong class="text-white">Contrato NDA:</strong> Firmamos acuerdos de confidencialidad para proteger tu información sensible.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-brand-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                        <p class="text-sm"><strong class="text-white">Privacidad Total:</strong> Tu base de datos es tuya. Garantizamos acceso exclusivo.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-brand-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
-                        <p class="text-sm"><strong class="text-white">Backups Diarios:</strong> Copias automáticas para que nunca pierdas información.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-white font-bold text-lg mb-6 border-b border-slate-700 pb-2 inline-block">Servicio Premium</h4>
-                <ul class="space-y-5">
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                        <p class="text-sm"><strong class="text-white">Protocolos SLA:</strong> Soporte directo garantizado con ingenieros.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-brand-400 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
-                        <p class="text-sm"><strong class="text-white">Personalización:</strong> Adaptamos el software a tus flujos.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 text-purple-500 mt-1 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-                        <p class="text-sm"><strong class="text-white">Mejora Continua:</strong> Actualizaciones gratis siempre.</p>
-                    </li>
-                </ul>
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 text-center md:text-left">
+                <p class="mb-4 md:mb-0">&copy; 2025 <a target="_blank" href=https://geeky-tech.es/>Geeky Tech</a>. Todos los derechos reservados.</p>
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <a href="#" class="hover:text-white transition whitespace-nowrap">Términos y Condiciones</a>
+                    <a href="#" class="hover:text-white transition whitespace-nowrap">Política de Privacidad</a>
+                    <a href="#" class="hover:text-white transition whitespace-nowrap">Acuerdo SLA</a>
+                </div>
             </div>
         </div>
-
-        <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 text-center md:text-left">
-            <p class="mb-4 md:mb-0">&copy; 2025 <a target="_blank" href=https://geeky-tech.es/>Geeky Tech</a>. Todos los derechos reservados.</p>
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                <a href="#" class="hover:text-white transition whitespace-nowrap">Términos y Condiciones</a>
-                <a href="#" class="hover:text-white transition whitespace-nowrap">Política de Privacidad</a>
-                <a href="#" class="hover:text-white transition whitespace-nowrap">Acuerdo SLA</a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
